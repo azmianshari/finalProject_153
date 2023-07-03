@@ -75,25 +75,25 @@ int main() {
 	Lingkaran L;
 	L.input(); 
 	cout << "Luas Lingkaran =" << L.Luas() << "\nKeliling Lingkaran =" << L.Keliling() << endl;
-	{if (L.Keliling() > 40) {
+	if (L.Keliling() > 40) {
 		cout << "Ukuran Lingkaran adalah besar" << endl;
 		
 	}
-	if (L.Keliling() > 20) {
+	else if  (L.Keliling() > 20) {
 		cout << "Ukuran Lingkaran adalah sedang" << endl;
 		
 	}
 	else(L.Keliling() < 10); {
 		cout << "Ukuran Lingkaran adalah kecil" << endl;
 		}
-	}
+	
 	Persegipanjang P;
 	P.input();
 	cout << "Luas Persegi Panjang =" << P.Luas() << "\nKeliling Persegi Panjang =" << P.Keliling() << endl;
-	{if (P.Keliling() > 40) {
+	if (P.Keliling() > 40) {
 		cout << "Ukuran Persegi panjang adalah besar" << endl;
 		}
-	if (P.Keliling() > 20) {
+	else if (P.Keliling() > 20) {
 		cout << "Ukuran Persegi panjang adalah sedang" << endl;
 		}
 	else(P.Keliling() < 10); {
@@ -101,6 +101,6 @@ int main() {
 		}
 
 		
-	}
+	
 	return 0;
 }
